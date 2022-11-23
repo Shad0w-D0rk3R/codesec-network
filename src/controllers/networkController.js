@@ -57,14 +57,14 @@ exports.index = async function(req, res) {
 
   try {
     const zt_status = await zt.get_zt_status();
-    res.render('index', {title: 'ztncui', navigate: navigate, zt_status});
+    res.render('index', {title: 'codesec', navigate: navigate, zt_status});
   } catch (err) {
-    res.render('index', {title: 'ztncui',
+    res.render('index', {title: 'codesec',
                       navigate: navigate, error: 'ERROR getting ZT status: ' + err});
   }
 };
 
-// Display list of all networks on this ZT network controller
+// Display list of all networks on this  network controller
 exports.network_list = async function(req, res) {
   const navigate =
     {

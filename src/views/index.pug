@@ -10,12 +10,12 @@ block content
   h2
     a(href='https://codesecure.in' target='_blank') Codesec 
     | Network Controller 
-    a(href='https://codesecure.in' target='_blank') Codesec 
+   
 
   if error
      b #{error}
   else
-    h4 This network controller has a address  <b>#{zt_status.address}</b>
-    h4 network version <b>#{zt_status.version}</b>
+    h4 This network controller address  <b>#{zt_status.address}</b>
+    h4 network controller version <b>#{zt_status.version}</b>
     h4
       a(href='/controller/networks') List all networks on this network controller

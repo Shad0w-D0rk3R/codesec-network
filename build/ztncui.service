@@ -1,0 +1,14 @@
+[Unit]
+Description=ztncui - Codesec network controller user interface
+Documentation=https://codesecure.in
+After=network.target
+
+[Service]
+Type=simple
+User=ztncui
+WorkingDirectory=/opt/key-networks/ztncui
+ExecStart=/opt/key-networks/ztncui/ztncui
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
